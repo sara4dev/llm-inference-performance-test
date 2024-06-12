@@ -39,8 +39,9 @@ curl http://localhost:8000/v1/models
 
 1. deploy llama3 7b in smaller nvidia machine & expose openai compatible api
 1. learn to benchmark the api
+1. optimize with TensorRT-LLM engine & run the benchmarks again
 1. now that we have learned to run benchmarks, lets repeat it on a bigger machine like A100/H100
-1. do the same in AMD
+1. do the same in AMD, optimize for RCoM?
 1. do the same in AWS
 1. do the same in Intel Gaudi
 1. do the same in google TPU
