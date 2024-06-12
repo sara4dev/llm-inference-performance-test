@@ -14,3 +14,18 @@ conda activate myenv
 # Install vLLM with CUDA 12.1.
 pip install vllm
 ```
+
+## vLLM
+
+* Offline Batched Inference - `python vllm/offline-batched-inference.py`
+* OpenAI-Compatible Server
+
+```
+python -m vllm.entrypoints.openai.api_server \
+    --model facebook/opt-125m
+```
+
+```
+curl http://localhost:8000/v1/models
+```
+
