@@ -19,4 +19,4 @@ python token_benchmark_ray.py \
 --results-dir "result_outputs" \
 --llm-api openai \
 --additional-sampling-params '{}' \
---results-dir "result_outputs"
+--results-dir "../llmperf_outputs/"
