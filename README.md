@@ -14,6 +14,10 @@ conda activate myenv
 # Install vLLM with CUDA 12.1.
 pip install vllm
 ```
+* Install huggingface cli
+```
+pip install -U "huggingface_hub[cli]"
+```
 
 ## vLLM
 
@@ -27,6 +31,19 @@ python -m vllm.entrypoints.openai.api_server \
 
 ```
 curl http://localhost:8000/v1/models
+```
+
+## TensorRT-LLm
+
+* install git-lfs
+```
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+apt-get install git-lfs
+```
+* installopenmpi
+```
+apt install libopenmpi-dev
+pip install mpi4py
 ```
 
 ## Benchmarks
